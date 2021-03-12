@@ -15,7 +15,9 @@ public class Student {
         idNum ++;
     }
 
-    public void addclass()
+    public void addclass(String classSubject, int classgrade){
+
+    }
 
 
 
