@@ -17,23 +17,18 @@ System.out.println("---input array---");
         newArray[n] = ele;
 
 
-
-        int arr[] = {0,1,2,3,4};
-        int newarr[] = new int [n - 1];
-
-        for (i = 0; i < arr.length; i++)
-            newarr[i] = arr[i];
-        for(int e: newarr){
-            System.out.println(e);
-        }
-
-
-
 System.out.println("extended array");
         return newArray;
 
+    }
 
+    public static int[] deletearrayindex(int[] inputArray) {
+        int[] newArray = new int[inputArray.length - 1];
+        for (int x = 0; x < newArray.length; x++) {
+            newArray[x] = inputArray[x];
+        }
 
+        return newArray;
     }
 
 
@@ -49,26 +44,20 @@ System.out.println("extended array");
 
 
 
+// second method - prints out decreased size
+            int[] Method2 = {1, 2, 3};
+            System.out.println("Original Array");
+            System.out.println(Method2);
+
+
+            Method2 = deletearrayindex(Method2);
+            System.out.println("New Array with decreased size");
+            System.out.println(Method2);
+
+
+
 
 
 
 
         }
-
-
-
-
-
-
-
-
-
-    }
-
-
-
-
-
-}
-
-
